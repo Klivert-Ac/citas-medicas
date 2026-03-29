@@ -14,9 +14,7 @@ public class Cita {
             return "Ingrese un código de cita válido";
         }
 
-        if (!nombre.matches("[a-zA-Z]{5,}")) {
-            return "El nombre del paciente debe tener al menos cinco caracteres alfabéticos";
-        }
+
 
         if (!dni.matches("\\d{8}")) {
             return "Ingrese un número de documento válido";
