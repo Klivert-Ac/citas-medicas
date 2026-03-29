@@ -18,7 +18,9 @@ public class Cita {
             return "El nombre del paciente debe tener al menos cinco caracteres alfabéticos";
         }
 
-
+        if (!dni.matches("\\d{8}")) {
+            return "Ingrese un número de documento válido";
+        }
 
         LocalDate fechaCita = LocalDate.parse(fecha);
         if (!fechaCita.isAfter(LocalDate.now())) {
