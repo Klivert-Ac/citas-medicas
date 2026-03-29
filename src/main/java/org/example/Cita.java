@@ -22,7 +22,10 @@ public class Cita {
             return "Ingrese un número de documento válido";
         }
 
-
+        LocalDate fechaCita = LocalDate.parse(fecha);
+        if (!fechaCita.isAfter(LocalDate.now())) {
+        return "La fecha de la cita debe ser posterior a la fecha actual";
+        }
 
         return "La cita ha sido registrada correctamente";
     }
