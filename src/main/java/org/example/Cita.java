@@ -10,9 +10,7 @@ public class Cita {
             return "Debe ingresar todos los datos requeridos";
         }
 
-        if (!codigo.matches("C\\d{3}")) {
-            return "Ingrese un código de cita válido";
-        }
+
 
         if (!nombre.matches("[a-zA-Z]{5,}")) {
             return "El nombre del paciente debe tener al menos cinco caracteres alfabéticos";
